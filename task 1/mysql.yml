@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: "rsmysql"
+    
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            env: dev
+            app: mysql
+    template:
+        metadata:
+            name: mysqlpod
+            labels:
+                env: dev
+                app: mysql
+        spec:
+            containers:
+            - name: "mysqlimg"
+              image: "mysql:5.6"
+              volumeMounts:
+              - name: mysql-pvc
+                mountPath: /var/lib/mysql
+              env:
+              - name: MYSQL_ROOT_PASSWORD
+                valueFrom:
+                    secretKeyRef:
+                        name: mysqlcred
+                        key: rpass
+              - name: MYSQL_DATABASE
+                value: wpdb
+              - name: MYSQL_USER
+                valueFrom:
+                    secretKeyRef:
+                        name: mysqlcred
+                        key: username
+              - name: MYSQL_PASSWORD
+                valueFrom:
+                    secretKeyRef:
+                        name: mysqlcred
+                        key: upass
+                
+            volumes:
+            - name: mysql-pvc
+              persistentVolumeClaim:
+                claimName: mysqlpvc
