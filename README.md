@@ -1,9 +1,9 @@
 # hybrid-cloud-training
 This repo contains all the projects submitted during hybrid multi cloud training
 
-###The projects are named as tasks. The goals are as follows:
+### The projects are named as tasks. The goals are as follows:
 
-######- Task 1 :
+###### - Task 1 :
     1. Create the key and security group which allow the port 80
     2. Launch EC2 instance
     3. In this Ec2 instance use the key and security group which we have created in step 1
@@ -13,7 +13,7 @@ This repo contains all the projects submitted during hybrid multi cloud training
     7. Create S3 bucket, and copy/deploy the images from github repo into the s3 bucket and change the permission to public readable
     8 Create a Cloudfront using s3 bucket(which contains images) and use the Cloudfront URL to  update in code in /var/www/html
 
-######- Task 2 :
+###### - Task 2 :
     1. Create Security group which allow the port 80
     2. Launch EC2 instance
     3. In this Ec2 instance use the existing key or provided key and security group which we have created in step 1
@@ -23,7 +23,7 @@ This repo contains all the projects submitted during hybrid multi cloud training
     7. Create S3 bucket, and copy/deploy the images from github repo into the s3 bucket and change the permission to public readable
     8 Create a Cloudfront using s3 bucket(which contains images) and use the Cloudfront URL to  update in code in /var/www/html
 
-######- Task 3 :
+###### - Task 3 :
     1. Write a Infrastructure as code using terraform, which automatically create a VPC.
     2. In that VPC we have to create 2 subnets:
         a)  public  subnet [ Accessible for Public World! ] 
@@ -39,7 +39,7 @@ This repo contains all the projects submitted during hybrid multi cloud training
     mysql instance has to be part of private  subnet so that outside world can't connect to it.
     Don't forgot to add auto ip assign and auto dns name assignment option to be enabled.
 
-######- Task 4 :
+###### - Task 4 :
     1.  Write an Infrastructure as code using terraform, which automatically create a VPC.
     2.  In that VPC we have to create 2 subnets:
         1.   public  subnet [ Accessible for Public World! ] 
