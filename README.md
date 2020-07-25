@@ -1,7 +1,7 @@
 # hybrid-cloud-training
 This repo contains all the projects submitted during hybrid multi cloud training
 
-### The projects are named as tasks. The goals are as follows:
+##### The projects are named as tasks. The goals are as follows:
 
 ###### - Task 1 :
     1. Create the key and security group which allow the port 80
