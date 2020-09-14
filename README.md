@@ -1,5 +1,4 @@
-# hybrid-cloud-training
-This repo contains all the projects submitted during hybrid multi cloud training
+# This repo contains all the projects submitted during Hybrid Multi Cloud Training
 
 ##### The projects are named as tasks. The goals are as follows:
 
